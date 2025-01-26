@@ -2,8 +2,8 @@ import { useState, useEffect } from "react"
 
 export default function Main() {
     const [meme, setMeme] = useState({
-        topText: "One does not simply",
-        bottomText: "Walk into Mordor",
+        topText: "Top Text",
+        bottomText: "Bottom Text",
         imageUrl: "http://i.imgflip.com/1bij.jpg"
     })
     const [allMemes, setAllMemes] = useState([])
@@ -37,7 +37,7 @@ export default function Main() {
                 <label>Top Text
                     <input
                         type="text"
-                        placeholder="One does not simply"
+                        placeholder="Top Text"
                         name="topText"
                         onChange={handleChange}
                         value={meme.topText}
@@ -47,7 +47,7 @@ export default function Main() {
                 <label>Bottom Text
                     <input
                         type="text"
-                        placeholder="Walk into Mordor"
+                        placeholder="Bottom Text"
                         name="bottomText"
                         onChange={handleChange}
                         value={meme.bottomText}
